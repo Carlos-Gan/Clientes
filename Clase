@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Clientes {
+String RFC;
+String Nombre;
+String Domicilio;
+float CreditoDisponible;
+
+public Clientes(){
+    
+}
+public void pedirRFC(){
+        Scanner entrada=new Scanner(System.in);
+        System.out.print("Ingresar RFC: ");
+        //Forma dos
+        RFC = entrada.nextLine();
+}
+
+public void pedirNombre(){
+    Scanner entrada = new Scanner(System.in);
+    System.out.print("Ingrese el nombre: ");
+    Nombre=entrada.nextLine();
+}
+
+public void pedirDomicilio(){
+    Scanner entrada = new Scanner(System.in);
+    System.out.print("Ingrese domicilio: ");
+    Domicilio=entrada.nextLine();
+}
+public void creditoAleatorio(){
+    CreditoDisponible = (int) (Math.random() * 50000) + 5000;
+}
+public void imprimir(){
+        System.out.println("RFC: " +RFC);
+        System.out.println("Nombre: " +Nombre);          
+        System.out.println("Domicilio: " +Domicilio);
+        System.out.println("Credito Disponible: " +CreditoDisponible);
+}
+
+}
