@@ -1,0 +1,25 @@
+
+public class Clientela {
+
+    public static void main(String[] args) {
+//       Cliente 1
+        Clientes cliente1 = new Clientes();
+        cliente1.Nombre="Jose Ramon";
+        cliente1.RFC="JORA09312";
+        cliente1.Domicilio="Calle Domingo #107";
+        cliente1.creditoAleatorio();
+        cliente1.imprimir();
+        
+        
+//        Cliente 2
+        Clientes cliente2 = new Clientes();
+        System.out.println("\nCliente 2");
+        cliente2.imprimir();
+        cliente2.pedirNombre();
+        cliente2.pedirRFC();
+        cliente2.pedirDomicilio();
+        cliente2.creditoAleatorio();
+        cliente2.imprimir();
+    }
+    
+}
